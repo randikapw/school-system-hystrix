@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.poc.randikapw</groupId>
-	<artifactId>hystrix-student-service</artifactId>
+	<artifactId>hystrixStudentService</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>hystrix-student-service</name>
 	<description>Demo project for hystrix poc</description>
