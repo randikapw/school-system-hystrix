@@ -24,7 +24,7 @@ public class StudentServiceContoller {
 		List<Student> lst = new ArrayList<>();
 		lst.add(new Student("Randika", "Grade V"));
 //		lst.add(new Student("Nilwala", "Grade iV"));
-		lst.add(new Student("Nilwala", null));
+		lst.add(new Student(null, null));
 
 		schoolDB.put("School-I", lst);
 
