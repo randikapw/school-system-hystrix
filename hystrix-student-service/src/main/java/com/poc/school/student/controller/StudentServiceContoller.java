@@ -6,11 +6,9 @@ import java.util.List;
 import java.util.Map;
 
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.poc.school.student.entity.ResponseStudentListForSchool;
 import com.poc.school.student.entity.Student;
 
 @RestController
@@ -36,9 +34,9 @@ public class StudentServiceContoller {
 	}
 
 	@GetMapping("/students")
-	public ResponseStudentListForSchool getStudentsOfSchool(@RequestParam String schoolName) {
+	public List<Student> getStudentsOfSchool(@RequestParam String schoolName) {
 		// TODO: handle non happy scenarios such as bad request (400) not found (404)
-		return new ResponseStudentListForSchool(schoolDB.get(schoolName), schoolName);
+		return schoolDB.get(schoolName);
 	}
 
 }
