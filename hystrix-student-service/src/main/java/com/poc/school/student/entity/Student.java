@@ -1,8 +1,13 @@
 package com.poc.school.student.entity;
 
+import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.annotation.JsonInclude.Include;
+
 public class Student {
 
 	private String name;
+	
+	@JsonInclude(Include.NON_EMPTY)
 	private String className;
 
 	public Student(String name, String className) {
