@@ -12,6 +12,8 @@ import org.springframework.web.client.RestTemplate;
 @EnableCircuitBreaker
 public class HystrixSchoolServiceApplication {
 	
+	// Ref : https://howtodoinjava.com/spring-cloud/spring-hystrix-circuit-breaker-tutorial/
+	
 	@Bean
 	public RestTemplate restTemplate() {
 		return new RestTemplate();
